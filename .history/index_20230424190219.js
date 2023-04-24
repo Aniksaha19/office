@@ -1,4 +1,7 @@
 
+
+
+
 const express = require("express");
 const app = express();
 const port = 8000;
@@ -20,9 +23,9 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-app.get('/send-email', (req, res) => {
+app.get('/email', (req, res) => {
 	const data = {
-		name: 'Mr. Test Test',
+		passengerName: 'Mr. Test Test',
 		travelDate: '29 May 2023',
 		travelTime: '10:30 A.M',
 		pnr: 'XQG5UZ',

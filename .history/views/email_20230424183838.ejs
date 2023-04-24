@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flight Booking Confirmation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="font-family: Arial, sans-serif">
+    <center>
+      <div style="display: flex; justify-content: center; align-items: center; height: 100px; margin: 0;">
+        <img src="https://goflysmart.blob.core.windows.net/emailer/ppaf/logo.png" alt="logo" width="150">
+      </div>
+      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f6f6f6;">
+        <h1 style="margin-top: 0; font-size: 24px; font-weight: bold; text-align: center; color: #333;">Your ticket has been booked.</h1>
+        <h3 style="font-size: 14px; color: #333; line-height: 1.4;">Hello <%= name %>,</h3>
+        <p style="margin: 0 0 20px 0; font-size: 14px; color: #333; line-height: 1.4;">We are pleased to confirm your flight booking for the following itinerary:</p>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+          <tbody>
+            <tr>
+              <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Travel Date</th>
+              <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Travel Time</th>
+              <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">PNR</th>
+              <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Flight No</th>
+              <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Sector</th>
+            </tr>
+            <tr>
+              <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;"><%= travelDate %></td>
+              <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;"><%= travelTime %></td>
+              <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1
+
+                <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">PNR</th>
+                <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Flight No</th>
+                <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Sector</th>
+              </tr>
+              <tr>
+                <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;">29 May 2023</td>
+                <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;">10:30 A.M</td>
+                <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;">XQG5UZ</td>
+                <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;">6E 514</td>
+                <td style="padding: 5px; border: 1px solid #ccc; text-align: center; font-size: 14px; color: #333; line-height: 1.4;">Bagdogra - Hyderabad</td>
+              </tr>
+            </tbody></table>
+            <div style="font-size: 14px; color: #333; line-height: 1.4;">
+                <p>The passenger details are as follows:</p>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                   <tbody><tr>
+                      <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Name</th>
+                      <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Type</th>
+                      <th style="padding: 5px; border: 1px solid #ccc; text-align: center; background-color: #eee; font-weight: bold; color: #333;">Price</th>
+                   </tr>
+                   
+                   <tr>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">Mr. Test Test</td>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">Adult</td>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">9650</td>
+                   </tr>
+                   
+                   <tr>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">Mstr Test Infant</td>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">Infant</td>
+                      <td style="padding: 5px; border: 1px solid #ccc; text-align: center;">1500</td>
+                   </tr>
+                   
+                </tbody></table>
+                <h3 style="margin-top: 0; font-size: 24px; font-weight: bold; text-align: center; color: #333;">Total Price: 11150</h3>
+                <p style="margin: 0 0 20px 0;"></p>
+                <p style="margin: 0 0 20px 0;">You can use the PNR provided above to manage your booking and check-in for your flight.</p>
+                <p style="margin: 0 0 20px 0;">Thank you,</p>
+                <p style="margin: 0 0 20px 0;">Goflysmart</p>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100px; margin: 0;">
+                   <p style="color: #333;"> ©2023 Goflysmart.All rights reserved.</p>
+                </div>
+             </div>
+          
+    </div></center>
+   
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
