@@ -28,11 +28,11 @@ app.get('/send-email', (req, res) => {
 		pnr: 'XQG5UZ',
 		flightNo: '6E 514',
 		sector: 'Bagdogra - Hyderabad',
-		passengerDetails: [
+		passenger: [
 			{name: 'Mr. Test Test', type: 'Adult', price: '9650'},
 			{name: 'Mstr Test Infant', type: 'Infant', price: '1500'}
 		],
-		totalPrice: '11150'
+		total: '11150'
 	};
 	
 	// Render the EJS template
